@@ -17,7 +17,7 @@ class Greet < Formula
       system "composer", "install", "--prefer-dist"
 
       # Generate CLI commands and get the generated command name
-      output = Utils.safe_popen_read("#{libexec}/vendor/bear/cli/bin/bear-cli-gen", "MyVendor\HelloCli")
+      output = Utils.safe_popen_read("#{libexec}/vendor/bear/cli/bin/bear-cli-gen", "MyVendor\\HelloCli")
       generated_command = output.match(/CLI commands have been generated.*:\n\s+(\w+)/)[1]
 
       if File.exist?("bin/#{generated_command}")

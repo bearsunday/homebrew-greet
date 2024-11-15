@@ -3,8 +3,8 @@
 
 class Greet < Formula
   desc "Konichiwa World"
-  homepage "https://github.com/koriym/MyVendor.HelloCli"
-  head "https://github.com/koriym/MyVendor.HelloCli.git", branch: "1.x"
+  homepage "https://github.com/koriym/greet"
+  head "https://github.com/koriym/MyVendor.Greet.git", branch: "1.x"
   license "MIT"
 
   depends_on "php@8.3"
